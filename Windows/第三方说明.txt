@@ -1,0 +1,9 @@
+这个 ZIP 不分发 FFmpeg 二进制。每台电脑首次使用时从固定上游 imageio-ffmpeg 0.6.0 Windows wheel 下载并解压 FFmpeg 7.1 到本机缓存，执行前校验下载包和可执行文件的 SHA-256。
+上游：https://pypi.org/project/imageio-ffmpeg/0.6.0/
+项目：https://github.com/imageio/imageio-ffmpeg
+FFmpeg：https://ffmpeg.org/
+许可证与源码：https://ffmpeg.org/legal.html / https://ffmpeg.org/download.html
+imageio-ffmpeg 包的 BSD-2-Clause 许可证与 FFmpeg 引擎自身许可证不同。
+用户界面通过独立子进程使用转码引擎，没有链接 FFmpeg 库。
+分享这个工具请发原 ZIP 或 exe，不要复制本机引擎缓存作为你的软件一起分发。
+界面和程序图标由本项目创建。Zig 编译器和 Windows 兼容测试环境不随软件分发。

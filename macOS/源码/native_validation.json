@@ -1,0 +1,24 @@
+{
+  "fat_binary": "two architectures, 16 KiB alignment",
+  "slices": [
+    {
+      "architecture": "lrom-launcher-x86_64",
+      "size": 16837,
+      "native_main": true,
+      "embedded_ad_hoc_signature_pages": "Intel slice unsigned; no kernel ad-hoc-signature requirement",
+      "library": [
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "architecture": "lrom-launcher-arm64",
+      "size": 49872,
+      "native_main": true,
+      "embedded_ad_hoc_signature_pages": "verified",
+      "library": [
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    }
+  ],
+  "macOS_Finder_runtime": "not executed"
+}

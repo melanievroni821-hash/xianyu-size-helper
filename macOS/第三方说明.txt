@@ -1,0 +1,17 @@
+本软件通过独立进程使用 FFmpeg 转码，不把 FFmpeg 库链接到界面代码。
+本工具包只包含界面、任务管理、安装脚本和测试源码，不包含 FFmpeg 二进制。
+
+每台机器首次使用时直接获取上游 imageio-ffmpeg 0.6.0 的对应 macOS wheel，
+解压其中的 FFmpeg 7.1 可执行文件到用户本机缓存。使用前对下载包与可执行文件
+进行固定 SHA-256 校验。安装过程不会把素材上传到任何服务。
+
+上游项目：https://github.com/imageio/imageio-ffmpeg
+固定发行：https://pypi.org/project/imageio-ffmpeg/0.6.0/
+imageio-ffmpeg 包许可证：BSD-2-Clause（与 FFmpeg 引擎自身许可证不同）。
+FFmpeg 项目：https://ffmpeg.org/
+FFmpeg 许可证说明：https://ffmpeg.org/legal.html
+FFmpeg 源码：https://ffmpeg.org/download.html
+
+上游引擎的编译选项和许可证可以执行缓存引擎的 -buildconf 与 -L 查看。
+缓存引擎仅供本机使用；分享本工具时发送原工具 ZIP，不要复制本机缓存，
+避免把上游二进制作为你的软件重新分发。

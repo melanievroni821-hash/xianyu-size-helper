@@ -1,0 +1,46 @@
+**/dist/
+*.pdb
+*.res
+**/Contents/MacOS/lrom-launcher
+**/bin/
+**/__pycache__/
+**/tests/*.png
+
+# Release packages and generated build artifacts
+*.zip
+*.exe
+*.obj
+*.o
+*.a
+*.lib
+*.dll
+*.ilk
+*.exp
+**/build/
+**/build_win/
+**/zig-cache/
+**/.zig-cache/
+**/zig-out/
+**/源码/lrom-launcher-arm64
+**/源码/lrom-launcher-x86_64
+
+# Downloaded engines and caches (installer source scripts stay tracked)
+**/ffmpeg
+**/ffmpeg-*
+**/ffprobe
+**/ffprobe-*
+*.whl
+**/.setup.*/
+**/.cache/
+**/cache/
+*.pyc
+.DS_Store
+__MACOSX/
+
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json

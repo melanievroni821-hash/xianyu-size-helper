@@ -1,0 +1,40 @@
+{
+  "platform": "Linux; not a macOS UI acceptance test",
+  "tested": "2026-10-10",
+  "core": {
+    "passed": 14,
+    "cases": [
+      "01_black_with_audio",
+      "02_blur_with_audio",
+      "03_crop_with_audio",
+      "04_default_1080x1920",
+      "05_silent_landscape",
+      "06_rotation",
+      "07_anamorphic_SAR",
+      "08_HDR_to_SDR",
+      "09_square",
+      "10_portrait_4x5",
+      "11_no_overwrite",
+      "12_duplicate_filename",
+      "13_invalid_inputs_and_progress",
+      "14_unicode_and_shell_metacharacters"
+    ],
+    "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers"
+  },
+  "mac_ui": "not tested on a real Mac",
+  "installer": "pinned package and extracted binary hashes checked; macOS setup not executed",
+  "hotfix_2026-10-12": {
+    "trigger": "Mac start export: [NSNull count]",
+    "fix": "Use NSDictionary attributes, Ref error pointers and Cocoa nil object values",
+    "syntax": "passed: node --check",
+    "mac_execution": "not available; user supplied screenshot confirms UI and file selection work in v1.0"
+  },
+  "release_1_1_0": {
+    "date": "2026-10-12",
+    "processing_status": "User confirmed v1.0.1 works on real Mac before launcher change",
+    "launch_chain": "Passed 3 real C/exec tests on Linux with executable path API shim",
+    "universal_native_binary": "arm64 and x86_64 executable main entries verified; ARM code-page signature hashes verified",
+    "Finder_double_click": "not yet run on real Mac",
+    "gatekeeper": "No Developer ID signature or Apple notarization"
+  }
+}
